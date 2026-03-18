@@ -14,7 +14,7 @@ color:#222;
 }
 
 header{
-background: linear-gradient(rgba(31,41,55,.75), rgba(31,41,55,.75)),
+background: linear-gradient(rgba(31,41,55,.78), rgba(31,41,55,.78)),
 url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80');
 background-size:cover;
 background-position:center;
@@ -30,18 +30,19 @@ margin-bottom:10px;
 
 header p{
 font-size:20px;
-max-width:800px;
-margin:0 auto 20px auto;
+max-width:850px;
+margin:0 auto 22px auto;
 }
 
-.hero-button{
+.hero-buttons a{
 display:inline-block;
-background:#ffffff;
+background:white;
 color:#1f2937;
 padding:12px 22px;
 text-decoration:none;
 border-radius:30px;
 font-weight:bold;
+margin:8px;
 }
 
 nav{
@@ -64,8 +65,8 @@ font-size:14px;
 section{
 background:white;
 margin:20px auto;
-padding:25px;
-max-width:950px;
+padding:28px;
+max-width:1000px;
 border-radius:10px;
 box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
@@ -76,32 +77,27 @@ padding-bottom:6px;
 margin-top:0;
 }
 
-.bookshelf{
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 margin-top:20px;
 }
 
-.book-card{
+.card{
 background:#fafafa;
 border:1px solid #ddd;
 border-radius:10px;
-padding:18px;
-text-align:center;
+padding:20px;
 box-shadow:0 2px 6px rgba(0,0,0,.06);
 }
 
-.book-card h3{
+.card h3{
 margin-top:0;
-font-size:18px;
+font-size:20px;
 }
 
-.book-card p{
-font-size:14px;
-}
-
-.book-button{
+.button{
 display:inline-block;
 margin-top:10px;
 background:#374151;
@@ -140,16 +136,17 @@ margin:6px 8px;
 <header>
 <h1>JoAnn Bishop</h1>
 <p>Advocate • Researcher • Writer • Defender of the Unheard</p>
-<a class="hero-button" href="#books">View My Books</a>
+<div class="hero-buttons">
+<a href="#books">View My Books</a>
+<a href="#work">See My Work</a>
+</div>
 </header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="#advocacy">Advocacy</a>
-<a href="#research">Research</a>
-<a href="#writing">Writing</a>
 <a href="#books">Books</a>
+<a href="#work">Advocacy & Research</a>
+<a href="#writing">Writing</a>
 <a href="#mission">Mission</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -157,69 +154,86 @@ margin:6px 8px;
 <section id="about">
 <h2>About</h2>
 <p>
-I’m JoAnn Bishop, a student, advocate, researcher, and writer committed to protecting the overlooked and giving voice to stories that matter. My work blends criminal justice, advocacy, research, and storytelling with heart, purpose, and persistence.
+I’m JoAnn Bishop, a student, advocate, researcher, and writer committed to protecting the overlooked and giving voice to stories that matter. My work blends criminal justice, human services, advocacy, investigative curiosity, and storytelling with heart, purpose, and persistence.
+</p>
+<p>
+I believe truth matters. Connection matters. Children matter. Families matter. The stories people carry matter. Whether I am writing, researching, or advocating, I want my work to leave something meaningful behind.
 </p>
 </section>
 
-<section id="education">
-<h2>Education</h2>
-<p>
-Southern New Hampshire University — Criminal Justice and Human Services academic focus.
-</p>
+<section id="books">
+<h2>Featured Books</h2>
+<p>Stories rooted in comfort, resilience, imagination, tenderness, and love that keeps reaching.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Mammaw Bunny & Stella Bunny and the Moonlight Promise</h3>
+<p>A gentle bedtime story about love, comfort, and a promise that still reaches across the dark.</p>
+<a class="button" href="#">Featured Title</a>
+</div>
+
+<div class="card">
+<h3>Solas the Moon Moth & the Light in Stella’s Window</h3>
+<p>A tender story about love, hope, and watching over a child through distance and darkness.</p>
+<a class="button" href="#">Coming Soon</a>
+</div>
+
+<div class="card">
+<h3>Stella’s Wishbook & the Town of Topsy-Turvy</h3>
+<p>A heartfelt and silly adventure filled with wishes, imagination, and topsy-turvy surprises.</p>
+<a class="button" href="#">Coming Soon</a>
+</div>
+
+<div class="card">
+<h3>Whispers Beneath the Creek</h3>
+<p>A poetic story inspired by land, memory, hidden history, and the whispers beneath the surface.</p>
+<a class="button" href="#">Coming Soon</a>
+</div>
+</div>
 </section>
 
-<section id="advocacy">
-<h2>Advocacy</h2>
-<p>
-My advocacy centers on children, families, victims, and those whose pain is too often minimized or ignored. I care deeply about connection, fairness, dignity, and emotional safety.
-</p>
-</section>
+<section id="work">
+<h2>Advocacy & Research</h2>
 
-<section id="research">
-<h2>Research</h2>
+<div class="grid">
+<div class="card">
+<h3>Advocacy</h3>
 <p>
-My research interests include criminal justice systems, investigative analysis, victim-centered work, social issues, and the deeper truths that often sit beneath the surface.
+My advocacy centers on children, families, victims, and those whose pain is too often minimized or ignored. I care deeply about fairness, emotional safety, dignity, and protecting meaningful human connection.
 </p>
+</div>
+
+<div class="card">
+<h3>Research</h3>
+<p>
+My research interests include criminal justice systems, investigative analysis, victim-centered work, behavioral patterns, and deeper truths that often sit beneath the surface.
+</p>
+</div>
+
+<div class="card">
+<h3>Student Work</h3>
+<p>
+My academic work connects criminal justice, human services, and advocacy to real-world problems that affect communities, vulnerable populations, and systems of justice.
+</p>
+</div>
+
+<div class="card">
+<h3>Mission-Driven Projects</h3>
+<p>
+I am most drawn to work that informs, protects, helps, or uncovers truth. I care about projects that carry substance and real human impact.
+</p>
+</div>
+</div>
 </section>
 
 <section id="writing">
 <h2>Writing</h2>
 <p>
-Writing is one of the strongest threads running through everything I do. I write to advocate, to tell the truth, to connect, and to leave something meaningful behind.
+Writing is one of the strongest threads running through everything I do. I write to advocate, to comfort, to tell the truth, to connect, and to leave something meaningful behind.
 </p>
-</section>
-
-<section id="books">
-<h2>Bookshelf</h2>
-<p>Here are some of the stories in my growing collection.</p>
-
-<div class="bookshelf">
-
-<div class="book-card">
-<h3>Mammaw Bunny & Stella Bunny and the Moonlight Promise</h3>
-<p>A gentle bedtime story about love, comfort, and a promise that still reaches across the dark.</p>
-<a class="book-button" href="#">Coming Soon</a>
-</div>
-
-<div class="book-card">
-<h3>Solas the Moon Moth & the Light in Stella’s Window</h3>
-<p>A tender story about love, hope, and watching over a child through distance and darkness.</p>
-<a class="book-button" href="#">Coming Soon</a>
-</div>
-
-<div class="book-card">
-<h3>Stella’s Wishbook & the Town of Topsy-Turvy</h3>
-<p>A heartfelt and silly adventure filled with wishes, imagination, and topsy-turvy surprises.</p>
-<a class="book-button" href="#">Coming Soon</a>
-</div>
-
-<div class="book-card">
-<h3>Whispers Beneath the Creek</h3>
-<p>A poetic story inspired by the land, the creek, and the hidden history that lives beneath the surface.</p>
-<a class="book-button" href="#">Coming Soon</a>
-</div>
-
-</div>
+<p>
+My work includes academic writing, personal reflection, mission-driven storytelling, and children’s books filled with warmth, imagination, and heart.
+</p>
 </section>
 
 <section id="mission">
@@ -232,7 +246,7 @@ My mission is to combine compassion, research, advocacy, and storytelling to hon
 <section id="contact">
 <h2>Contact</h2>
 <p>
-This section can later include your email, social links, book updates, or a contact form.
+This section can later include your email, social links, book updates, research portfolio, or a contact form.
 </p>
 </section>
 
