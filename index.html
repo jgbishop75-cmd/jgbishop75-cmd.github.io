@@ -1,73 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<title>JoAnn Bishop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JoAnn Bishop | Advocate • Researcher • Writer</title>
 
 <style>
 body{
-    font-family: Georgia, serif;
-    margin:0;
-    background:#f5f5f5;
-    color:#222;
-    line-height:1.6;
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+line-height:1.6;
+color:#222;
 }
 
 header{
-    background:#1f2937;
-    color:white;
-    padding:60px 20px;
-    text-align:center;
+background: linear-gradient(rgba(31,41,55,.75), rgba(31,41,55,.75)),
+url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+color:white;
+padding:90px 20px;
+text-align:center;
 }
 
 header h1{
-    font-size:40px;
-    margin-bottom:10px;
+font-size:48px;
+margin-bottom:10px;
 }
 
 header p{
-    font-size:18px;
-    opacity:.9;
+font-size:20px;
+max-width:800px;
+margin:0 auto 20px auto;
+}
+
+.hero-button{
+display:inline-block;
+background:#ffffff;
+color:#1f2937;
+padding:12px 22px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
 }
 
 nav{
-    background:#374151;
-    padding:12px;
-    text-align:center;
+background:#374151;
+padding:12px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-size:15px;
-}
-
-nav a:hover{
-    text-decoration:underline;
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
 }
 
 section{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
+background:white;
+margin:20px auto;
+padding:25px;
+max-width:950px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
 h2{
-    border-bottom:2px solid #e5e7eb;
-    padding-bottom:10px;
+border-bottom:2px solid #ddd;
+padding-bottom:6px;
+margin-top:0;
+}
+
+.bookshelf{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.book-card{
+background:#fafafa;
+border:1px solid #ddd;
+border-radius:10px;
+padding:18px;
+text-align:center;
+box-shadow:0 2px 6px rgba(0,0,0,.06);
+}
+
+.book-card h3{
+margin-top:0;
+font-size:18px;
+}
+
+.book-card p{
+font-size:14px;
+}
+
+.book-button{
+display:inline-block;
+margin-top:10px;
+background:#374151;
+color:white;
+padding:10px 16px;
+border-radius:25px;
+text-decoration:none;
+font-size:14px;
 }
 
 footer{
-    text-align:center;
-    padding:30px;
-    background:#1f2937;
-    color:white;
-    font-size:14px;
+text-align:center;
+background:#1f2937;
+color:white;
+padding:20px;
+margin-top:30px;
+}
+
+@media (max-width:600px){
+header h1{
+font-size:34px;
+}
+header p{
+font-size:17px;
+}
+nav a{
+display:inline-block;
+margin:6px 8px;
+}
 }
 </style>
-
 </head>
 
 <body>
@@ -75,6 +140,7 @@ footer{
 <header>
 <h1>JoAnn Bishop</h1>
 <p>Advocate • Researcher • Writer • Defender of the Unheard</p>
+<a class="hero-button" href="#books">View My Books</a>
 </header>
 
 <nav>
@@ -91,68 +157,82 @@ footer{
 <section id="about">
 <h2>About</h2>
 <p>
-I’m JoAnn Bishop, a student, advocate, researcher, and writer driven by a core belief: people deserve to be seen, heard, and protected. My work brings together criminal justice, human services, advocacy, storytelling, and research in ways that center truth, dignity, and real human impact.
-</p>
-
-<p>
-I care deeply about overlooked people, difficult truths, and the stories too often ignored. My goal is to combine knowledge with compassion and action—using research, writing, and advocacy to create change.
+I’m JoAnn Bishop, a student, advocate, researcher, and writer committed to protecting the overlooked and giving voice to stories that matter. My work blends criminal justice, advocacy, research, and storytelling with heart, purpose, and persistence.
 </p>
 </section>
 
 <section id="education">
 <h2>Education</h2>
 <p>
-Southern New Hampshire University – Academic focus in Criminal Justice, Human Services, Advocacy, and Research.
-</p>
-
-<p>
-My studies center on systems analysis, justice reform, victim support, and strengthening communities through informed advocacy and evidence-based research.
+Southern New Hampshire University — Criminal Justice and Human Services academic focus.
 </p>
 </section>
 
 <section id="advocacy">
 <h2>Advocacy</h2>
 <p>
-Advocacy is not just part of my work—it is woven into how I think and live. My advocacy work focuses on fairness, dignity, and protecting meaningful relationships that help children feel safe, connected, and loved.
+My advocacy centers on children, families, victims, and those whose pain is too often minimized or ignored. I care deeply about connection, fairness, dignity, and emotional safety.
 </p>
 </section>
 
 <section id="research">
 <h2>Research</h2>
 <p>
-My research interests include criminal justice systems, victim support, behavioral patterns, investigative work, and social issues affecting families and communities.
-</p>
-
-<p>
-Research allows us to ask better questions, challenge assumptions, and move closer to truth.
+My research interests include criminal justice systems, investigative analysis, victim-centered work, social issues, and the deeper truths that often sit beneath the surface.
 </p>
 </section>
 
 <section id="writing">
 <h2>Writing</h2>
 <p>
-Writing is both advocacy and storytelling. Through academic writing, research papers, and creative work, I aim to bring attention to difficult issues while also offering hope and understanding.
+Writing is one of the strongest threads running through everything I do. I write to advocate, to tell the truth, to connect, and to leave something meaningful behind.
 </p>
 </section>
 
 <section id="books">
-<h2>Books</h2>
-<p>
-This section will feature my growing children's library and storytelling projects, including works centered on comfort, resilience, and love across distance.
-</p>
+<h2>Bookshelf</h2>
+<p>Here are some of the stories in my growing collection.</p>
+
+<div class="bookshelf">
+
+<div class="book-card">
+<h3>Mammaw Bunny & Stella Bunny and the Moonlight Promise</h3>
+<p>A gentle bedtime story about love, comfort, and a promise that still reaches across the dark.</p>
+<a class="book-button" href="#">Coming Soon</a>
+</div>
+
+<div class="book-card">
+<h3>Solas the Moon Moth & the Light in Stella’s Window</h3>
+<p>A tender story about love, hope, and watching over a child through distance and darkness.</p>
+<a class="book-button" href="#">Coming Soon</a>
+</div>
+
+<div class="book-card">
+<h3>Stella’s Wishbook & the Town of Topsy-Turvy</h3>
+<p>A heartfelt and silly adventure filled with wishes, imagination, and topsy-turvy surprises.</p>
+<a class="book-button" href="#">Coming Soon</a>
+</div>
+
+<div class="book-card">
+<h3>Whispers Beneath the Creek</h3>
+<p>A poetic story inspired by the land, the creek, and the hidden history that lives beneath the surface.</p>
+<a class="book-button" href="#">Coming Soon</a>
+</div>
+
+</div>
 </section>
 
 <section id="mission">
 <h2>Mission</h2>
 <p>
-My mission is to bring both heart and strength to work that matters most—protecting connection, honoring truth, and ensuring that the stories of those often overlooked are heard.
+My mission is to combine compassion, research, advocacy, and storytelling to honor truth, protect connection, and make sure overlooked voices are not forgotten.
 </p>
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
 <p>
-This section will include ways to connect, collaborate, or follow my work in advocacy, research, and writing.
+This section can later include your email, social links, book updates, or a contact form.
 </p>
 </section>
 
